@@ -20,16 +20,3 @@ Deployed at: https://share.streamlit.io/user/abdodameen
 | [Vehicle Safety Recalls](/vehicle-safety-recalls) | NHTSA | Recalls by make/model/year |
 | [Train Schedules](/train-schedules) | transport.rest | Live European rail departures |
 | [World Population & GDP](/world-population-gdp) | World Bank | Economic indicators + pygwalker |
-
-## Deploy
-
-Each subfolder is a standalone Streamlit app. To deploy:
-
-1. Push this repo to GitHub
-2. Go to share.streamlit.io
-3. Connect your GitHub account
-4. Deploy each subfolder individually:
-   - Repo: `AbdoDameen/streamlit-apps`
-   - Branch: `main`
-   - Path: e.g. `sydney-weather/`
-   - Python version: 3.11+
