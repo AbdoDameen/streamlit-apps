@@ -1,0 +1,5 @@
+.venv/
+venv/
+cache/
+*:Zone.Identifier
+__pycache__/

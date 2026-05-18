@@ -8,7 +8,7 @@ Deployed at: https://share.streamlit.io/user/abdodameen
 
 | App | API | Description |
 |-----|-----|-------------|
-| [Sydneymapp](/sydney-mapp) | OpenStreetMap | Beautiful Sydney maps from OSM data (fork of prettymapp) |
+| [Sydney Map](/sydney-mapp) | OpenStreetMap | Beautiful maps from OSM data |
 | [Sydney Weather](/sydney-weather) | Open-Meteo | Real-time Sydney weather with 7-day forecast |
 | [SpaceX Launches](/spacex-launches) | SpaceX API | Launch history, vehicles, stats |
 | [Country Explorer](/country-explorer) | REST Countries | Country data with pygwalker viz |
