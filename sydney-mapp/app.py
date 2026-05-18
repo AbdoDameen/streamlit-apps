@@ -345,15 +345,7 @@ if submitted:
             st.error(f"Geocoding error: {e}")
             st.stop()
 
-        @st.cache_data(show_spinner=False)
-        def _fetch_osm(aoi):
-            return get_osm_geometries(aoi=aoi)
-
-        @st.cache_data(show_spinner=False)
-        def _render(_df, **kw):
-            return Plot(_df, **kw).plot_all()
-
-        df = _fetch_osm(aoi)
+        df = get_osm_geometries(aoi=aoi)
 
         config = {
             "aoi_bounds": aoi.bounds,
@@ -373,7 +365,7 @@ if submitted:
             "bg_color": bg_color,
         }
 
-        fig = _render(df, **config)
+        fig = Plot(df, **config).plot_all()
 
         # Store for export sections
         st.session_state["fig"] = fig
