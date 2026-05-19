@@ -32,12 +32,17 @@ source .venv/bin/activate
 # Install deps
 pip install -r requirements.txt
 
+# Set protobuf env var to avoid C extension issues
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+
 # Build the index (~2 min, downloads sentence-transformers model)
 python3 build_index.py
 
 # Run the app
 streamlit run app.py
 ```
+
+> If `build_index.py` crashes with a protobuf descriptor error, set `PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python` before running (as shown above). This uses pure-Python protobuf parsing which is slower but avoids the C extension compatibility issue.
 
 ## Data
 
