@@ -1,6 +1,6 @@
 # Streamlit Apps
 
-14 data web apps built with Streamlit and free public APIs.
+13 data web apps built with Streamlit and free public APIs.
 
 Deployed at: https://share.streamlit.io/user/abdodameen
 
