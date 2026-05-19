@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""
-Movie Mind — Build vector index with multi-modal embeddings & hybrid scoring.
-"""
+"""Movie Mind — Build vector index with multi-modal embeddings & hybrid scoring."""
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import json, pickle, re
 from pathlib import Path
 import numpy as np
